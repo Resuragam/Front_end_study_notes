@@ -202,3 +202,5 @@ undefined==null(true)` `undefined===null(false)`
 
 （3）使用 parseFloat() 方法，该函数解析一个字符串参数并返回一个浮点数。 
 
+## 三种事件模型是什么
+
