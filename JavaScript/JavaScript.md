@@ -547,3 +547,49 @@ class Truck extends Car{
   `apply()、call()、bind()`是函数的一个方法，作用是改变函数的调用对象。它的第一个参数就表示改变后的调用这个函数的对象。因此，这时`this`指的就是这第一个参数
 
 new绑定优先级 > 显示绑定优先级 > 隐式绑定优先级 > 默认绑定优先级
+
+## typeof 与 instanceof 有什么区别
+
+`typeof` 操作符返回一个字符串，表示未经计算的操作数的类型
+
+~~~javascript
+typeof 1 // 'number'
+typeof '1' // 'string'
+typeof undefined // 'undefined'
+typeof true // 'boolean'
+typeof Symbol() // 'symbol'
+typeof null // 'object'
+typeof [] // 'object'
+typeof {} // 'object'
+typeof console // 'object'
+typeof console.log // 'function'
+~~~
+
+`instanceof` 运算符用于检测构造函数的 `prototype` 属性是否出现在某个实例对象的原型链上
+
+`typeof`与`instanceof`都是判断数据类型的方法，区别如下：
+
+- `typeof`会返回一个变量的基本类型，`instanceof`返回的是一个布尔值
+- `instanceof` 可以准确地判断复杂引用数据类型，但是不能正确判断基础数据类型
+- 而` typeof` 也存在弊端，它虽然可以判断基础数据类型（`null` 除外），但是引用数据类型中，除了` function` 类型以外，其他的也无法判断
+
+可以看到，上述两种方法都有弊端，并不能满足所有场景的需求
+
+如果需要通用检测数据类型，可以采用`Object.prototype.toString`，调用该方法，统一返回格式`“[object Xxx]” `的字符串
+
+~~~javascript
+Object.prototype.toString({})       // "[object Object]"
+Object.prototype.toString.call({})  // 同上结果，加上call也ok
+Object.prototype.toString.call(1)    // "[object Number]"
+Object.prototype.toString.call('1')  // "[object String]"
+Object.prototype.toString.call(true)  // "[object Boolean]"
+Object.prototype.toString.call(function(){})  // "[object Function]"
+Object.prototype.toString.call(null)   //"[object Null]"
+Object.prototype.toString.call(undefined) //"[object Undefined]"
+Object.prototype.toString.call(/123/g)    //"[object RegExp]"
+Object.prototype.toString.call(new Date()) //"[object Date]"
+Object.prototype.toString.call([])       //"[object Array]"
+Object.prototype.toString.call(document)  //"[object HTMLDocument]"
+Object.prototype.toString.call(window)   //"[object Window]"
+~~~
+
