@@ -593,3 +593,10 @@ Object.prototype.toString.call(document)  //"[object HTMLDocument]"
 Object.prototype.toString.call(window)   //"[object Window]"
 ~~~
 
+## 什么是事件代理，以及它的应用场景有哪些？
+
+事件代理，俗地来讲，就是把一个元素响应事件（`click`、`keydown`......）的函数委托到另一个元素
+
+事件委托，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，而不是目标元素
+
+当事件响应到目标元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数
