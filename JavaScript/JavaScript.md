@@ -320,3 +320,121 @@ n()
 
 对象都有一个`_proto_`属性，这个属性指向它的原型对象。原型对象也是对象，也有`_proto_`属性，指向原型对象的原型对象，这样一层层的链式结构被称为原型链，直到最顶层为null。
 
+## Javascript如何实现继承？
+
+继承可以使得子类具有父类别的各种属性和方法，而不需要再次编写相同的代码
+
+在子类别继承父类别的同时，可以重新定义某些属性，并重写某些方法，即覆盖父类别的原有属性和方法，使其获得与父类别不同的功能
+
+首先定义一个Car类，然后定义Car类相关的属性
+
+~~~javascript
+class Car{
+    constructor(color,speed){
+        this.color = color
+        this.speed = speed
+        // ...
+    }
+}
+~~~
+
+~~~javascript
+// 货车
+class Truck extends Car{
+    constructor(color,speed){
+        super(color,speed)
+        this.color = 'black'
+        this.Container = true // 货箱
+    }
+}
+~~~
+
+货车继承汽车的同时，重新定义汽车的某些属性，从而获得与父类不同的方法。
+
+### 继承的实现方式
+
+* 原型链继承
+
+  ~~~javascript
+   function Parent() {
+      this.name = 'parent1';
+      this.play = [1, 2, 3]
+    }
+    function Child() {
+      this.type = 'child2';
+    }
+    Child1.prototype = new Parent();
+    console.log(new Child())
+  ~~~
+
+  ~~~javascript
+  var s1 = new Child()
+  var s2 = new Child()
+  s2.play.push(4)
+  console.log(s1.play) // 1 2 3 4
+  ~~~
+
+  原型链继承创建的子类都继承自同一个原型对象，因此内存空间共享，会造成属性值混乱。
+
+* 构造函数继承
+
+  ~~~javascript
+  function Parent(){
+      this.name = 'parent1';
+  }
+  
+  Parent.prototype.getName = function () {
+      return this.name;
+  }
+  
+  function Child(){
+      Parent1.call(this);
+      this.type = 'child'
+  }
+  
+  let child = new Child();
+  console.log(child);  // 没问题
+  console.log(child.getName());  // 会报错
+  ~~~
+
+  父类原型对象中一旦存在父类之前自己定义的方法，那么子类将无法继承这些方法
+
+* 组合继承
+
+  组合继承总结了上述两种方法，但是增加了性能开销。
+
+* 原型式继承
+
+  这里主要借助`Object.create`方法实现普通对象的继承
+
+  ~~~javascript
+  let parent4 = {
+      name: "parent4",
+      friends: ["p1", "p2", "p3"],
+      getName: function() {
+        return this.name;
+      }
+    };
+  
+    let person4 = Object.create(parent4);
+    person4.name = "tom";
+    person4.friends.push("jerry");
+  
+    let person5 = Object.create(parent4);
+    person5.friends.push("lucy");
+  
+    console.log(person4.name); // tom
+    console.log(person4.name === person4.getName()); // true
+    console.log(person5.name); // parent4
+    console.log(person4.friends); // ["p1", "p2", "p3","jerry","lucy"]
+    console.log(person5.friends); // ["p1", "p2", "p3","jerry","lucy"]
+  ~~~
+
+  这种继承方式的缺点也很明显，因为`Object.create `方法实现的是浅拷贝，多个实例的引用类型属性指向相同的内存，存在篡改的可能
+
+* 寄生式继承
+
+  优缺点与上述一样，数据容易被篡改
+
+使用`ES6` 中的`extends `关键字直接实现 `JavaScript `的继承。
+
