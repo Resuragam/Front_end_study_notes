@@ -204,3 +204,110 @@ undefined==null(true)` `undefined===null(false)`
 
 ## 三种事件模型是什么
 
+## 说说你对闭包的理解，以及闭包使用场景
+
+闭包是一个函数与周围状态的捆绑集合，闭包可以帮助你从内层函数访问到外层函数的作用域。
+
+~~~javascript
+function init() {
+    var name = "Mozilla"; // name 是一个被 init 创建的局部变量
+    function displayName() { // displayName() 是内部函数，一个闭包
+        alert(name); // 使用了父函数中声明的变量
+    }
+    displayName();
+}
+init();
+~~~
+
+闭包的特征：
+
+* 函数当中嵌套函数
+* 内部函数使用外部函数的参数和变量
+* 参数和变量不会被垃圾回收机制回收
+
+闭包的优点：
+
+* 希望一个变量长期存储在内存当中
+* 避免全局变量污染
+* 私有成员的存在
+
+闭包的缺点：
+
+* 常驻内存，增加了内存的使用量
+* 使用不当容易造成内存泄漏
+
+## 什么是作用域链？
+
+作用域，即变量和函数生效的区域或者集合，作用域决定了代码块中变量以及函数的可见性
+
+~~~javascript
+function myFunction() {
+    let inVariable = "函数内部变量";
+}
+myFunction();//要先执行这个函数，否则根本不知道里面是啥
+console.log(inVariable); // Uncaught ReferenceError: inVariable is not defined
+~~~
+
+作用域的划分：
+
+* 全局作用域
+* 块级作用域
+* 函数作用域（局部作用域）
+
+全局作用域：不在函数或者大括号当中创建的变量都在全局作用域当中。
+
+~~~javascript
+// 全局变量
+var greeting = 'Hello World!';
+function greet() {
+  console.log(greeting);
+}
+// 打印 'Hello World!'
+greet();
+~~~
+
+函数作用域：当一个变量在一个函数当中声明，那么它就在函数作用域当中，只能在函数内部访问，不能在函数以外访问
+
+~~~javascript
+function greet() {
+  var greeting = 'Hello World!';
+  console.log(greeting);
+}
+// 打印 'Hello World!'
+greet();
+// 报错： Uncaught ReferenceError: greeting is not defined
+console.log(greeting);
+~~~
+
+块级作用域：ES6引入了`let`和`const`关键字,和`var`关键字不同，在大括号中使用`let`和`const`声明的变量存在于块级作用域中。在大括号之外不能访问这些变量
+
+~~~javascript
+{
+  // 块级作用域中的变量
+  let greeting = 'Hello World!';
+  var lang = 'English';
+  console.log(greeting); // Prints 'Hello World!'
+}
+// 变量 'English'
+console.log(lang);
+// 报错：Uncaught ReferenceError: greeting is not defined
+console.log(greeting);
+~~~
+
+词法作用域，又叫静态作用域，变量被创建时就确定好了，而非执行阶段确定的。也就是说我们写好代码时它的作用域就确定了，`JavaScript` 遵循的就是词法作用域。
+
+~~~~javascript
+var a = 2;
+function foo(){
+    console.log(a)
+}
+function bar(){
+    var a = 3;
+    foo();
+}
+n()
+~~~~
+
+作用域链：当在`Javascript`中使用一个变量的时候，首先`Javascript`引擎会尝试在当前作用域下去寻找该变量，如果没找到，再到它的上层作用域寻找，以此类推直到找到该变量或是已经到了全局作用域。
+
+如果在全局作用域里仍然找不到该变量，它就会在全局范围内隐式声明该变量(非严格模式下)或是直接报错。
