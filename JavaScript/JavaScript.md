@@ -204,6 +204,65 @@ undefined==null(true)` `undefined===null(false)`
 
 ## 三种事件模型是什么
 
+- 原始事件模型（DOM0级）
+
+  事件绑定监听函数比较简单, 有两种方式：
+
+  - HTML代码中直接绑定
+
+  ```javascript
+  <input type="button" onclick="fun()">
+  ```
+
+  - 通过`JS`代码绑定
+
+  ```javascript
+  var btn = document.getElementById('.btn');
+  btn.onclick = fun;
+  ```
+
+  只支持冒泡，不支持时间捕获，同一个类型的事件只能绑定一次。
+
+  删除 `DOM0` 级事件处理程序只要将对应事件属性置为`null`即可
+
+- 标准事件模型（DOM2级）
+
+  - 事件捕获阶段：事件从`document`一直向下传播到目标元素, 依次检查经过的节点是否绑定了事件监听函数，如果有则执行
+  - 事件处理阶段：事件到达目标元素, 触发目标元素的监听函数
+  - 事件冒泡阶段：事件从目标元素冒泡到`document`, 依次检查经过的节点是否绑定了事件监听函数，如果有则执行
+
+  事件绑定监听函数的方式如下:
+
+  ```javascript
+  addEventListener(eventType, handler, useCapture)
+  ```
+
+  事件移除监听函数的方式如下:
+
+  ```javascript
+  removeEventListener(eventType, handler, useCapture)
+  ```
+
+- IE事件模型（基本不用）
+
+  ​	IE事件模型共有两个过程:
+
+  - 事件处理阶段：事件到达目标元素, 触发目标元素的监听函数。
+
+  - 事件冒泡阶段：事件从目标元素冒泡到`document`, 依次检查经过的节点是否绑定了事件监听函数，如果有则执行
+
+    事件绑定监听函数的方式如下:
+
+    ```
+    attachEvent(eventType, handler)
+    ```
+
+    事件移除监听函数的方式如下:
+
+    ```
+    detachEvent(eventType, handler)
+    ```
+
 ## 说说你对闭包的理解，以及闭包使用场景
 
 闭包是一个函数与周围状态的捆绑集合，闭包可以帮助你从内层函数访问到外层函数的作用域。
