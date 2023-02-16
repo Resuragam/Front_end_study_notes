@@ -600,3 +600,57 @@ Object.prototype.toString.call(window)   //"[object Window]"
 事件委托，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，而不是目标元素
 
 当事件响应到目标元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数
+
+## 说说new操作符具体干了什么
+
+在`JavaScript`中，`new`操作符用于创建一个给定构造函数的实例对象
+
+- `new` 通过构造函数 `Person` 创建出来的实例可以访问到构造函数中的属性
+- `new` 通过构造函数 `Person` 创建出来的实例可以访问到构造函数原型链中的属性（即实例与构造函数通过原型链连接了起来）
+
+从上面介绍中，我们可以看到`new`关键字主要做了以下的工作：
+
+- 创建一个新的对象`obj`
+- 将对象与构建函数通过原型链连接起来
+- 将构建函数中的`this`绑定到新建的对象`obj`上
+- 根据构建函数返回类型作判断，如果是原始值则被忽略，如果是返回对象，需要正常处理
+
+手动实现new 
+
+~~~javascript
+function mynew(Func, ...args) {
+    // 1.创建一个新对象
+    const obj = {}
+    // 2.新对象原型指向构造函数原型对象
+    obj.__proto__ = Func.prototype
+    // 3.将构建函数的this指向新对象
+    let result = Func.apply(obj, args)
+    // 4.根据返回值判断
+    return result instanceof Object ? result : obj
+}
+~~~
+
+##  bind、call、apply 有什么区别？如何实现一个bind?
+
+### apply
+
+`apply`接受两个参数，第一个参数是`this`的指向，第二个参数是函数接受的参数，以数组的形式传入
+
+当第一个参数为`null`、`undefined`的时候，默认指向`window`(在浏览器中)
+
+### call
+
+`call`方法的第一个参数也是`this`的指向，后面传入的是一个参数列表
+
+### bind
+
+bind方法和call很相似，第一参数也是`this`的指向，后面传入的也是一个参数列表(但是这个参数列表可以分多次传入)
+
+改变`this`指向后不会立即执行，而是返回一个永久改变`this`指向的函数
+
+从上面可以看到，`apply`、`call`、`bind`三者的区别在于：
+
+- 三者都可以改变函数的`this`对象指向
+- 三者第一个参数都是`this`要指向的对象，如果如果没有这个参数或参数为`undefined`或`null`，则默认指向全局`window`
+- 三者都可以传参，但是`apply`是数组，而`call`是参数列表，且`apply`和`call`是一次性传入参数，而`bind`可以分为多次传入
+- `bind `是返回绑定this之后的函数，`apply `、`call` 则是立即执行
