@@ -438,3 +438,53 @@ class Truck extends Car{
 
 使用`ES6` 中的`extends `关键字直接实现 `JavaScript `的继承。
 
+## this的理解
+
+在绝大多数情况下，函数的调用方式决定了 `this` 的值（运行时绑定）
+
+* 默认绑定
+
+  ~~~javascript
+  var name = 'Jenny';
+  function person() {
+      return this.name;
+  }
+  console.log(person());  //Jenny
+  ~~~
+
+* 隐式绑定
+
+  函数还可以作为某个对象的方法调用，这时`this`就指这个上级对象
+
+  ~~~javascript
+  function test() {
+    console.log(this.x);
+  }
+  
+  var obj = {};
+  obj.x = 1;
+  obj.m = test;
+  
+  obj.m(); // 1
+  ~~~
+
+  `this`永远指向的是最后调用它的对象
+
+* new 绑定
+
+  通过构建函数`new`关键字生成一个实例对象，此时`this`指向这个实例对象
+
+  ~~~javascript
+  function test() {
+  　this.x = 1;
+  }
+  
+  var obj = new test();
+  obj.x // 1
+  ~~~
+
+* 显示绑定
+
+  `apply()、call()、bind()`是函数的一个方法，作用是改变函数的调用对象。它的第一个参数就表示改变后的调用这个函数的对象。因此，这时`this`指的就是这第一个参数
+
+new绑定优先级 > 显示绑定优先级 > 隐式绑定优先级 > 默认绑定优先级
