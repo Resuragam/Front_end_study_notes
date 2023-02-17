@@ -798,3 +798,36 @@ function foo(arg) {
 
 使用事件监听`addEventListener`监听的时候，在不监听的情况下使用`removeEventListener`取消对事件监听
 
+## Javascript本地存储的方式有哪些，有什么区别，及有哪些应用场景
+
+### cookie
+
+`Cookie`，类型为「小型文本文件」，指某些网站为了辨别用户身份而储存在用户本地终端上的数据。是为了解决 `HTTP `无状态导致的问题
+
+作为一段一般不超过 4KB 的小型文本数据，它由一个名称（Name）、一个值（Value）和其它几个用于控制 `cookie `有效期、安全性、使用范围的可选属性组成
+
+但是`cookie`在每次请求中都会被发送，如果不使用 `HTTPS `并对其加密，其保存的信息很容易被窃取，导致安全风险。
+
+### localStorage
+
+- 生命周期：持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的
+- 存储的信息在同一域中是共享的
+- 当本页操作（新增、修改、删除）了`localStorage`的时候，本页面不会触发`storage`事件,但是别的页面会触发`storage`事件。
+- 大小：5M（跟浏览器厂商有关系）
+- `localStorage`本质上是对字符串的读取，如果存储内容多的话会消耗内存空间，会导致页面变卡
+- 受同源策略的限制
+
+`localStorage` 也不是完美的，它有两个缺点：
+
+- 无法像`Cookie`一样设置过期时间
+- 只能存入字符串，无法直接存对象
+
+### sessionStorage
+
+`sessionStorage `和 `localStorage `使用方法基本一致，唯一不同的是生命周期，一旦页面（会话）关闭，`sessionStorage` 将会删除数据
+
+关于`cookie`、`sessionStorage`、`localStorage`三者的区别主要如下：
+
+- 存储大小：` cookie`数据大小不能超过`4k`，`sessionStorage`和`localStorage `虽然也有存储大小的限制，但比`cookie`大得多，可以达到5M或更大
+- 有效时间：`localStorage `存储持久数据，浏览器关闭后数据不丢失除非主动删除数据； `sessionStorage `数据在当前浏览器窗口关闭后自动删除；`cookie`设置的`cookie`过期时间之前一直有效，即使窗口或浏览器关闭
+- 数据与服务器之间的交互方式，` cookie`的数据会自动的传递到服务器，服务器端也可以写`cookie`到客户端； `sessionStorage`和`localStorage`不会自动把数据发给服务器，仅在本地保存
