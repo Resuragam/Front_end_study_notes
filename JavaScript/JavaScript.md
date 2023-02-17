@@ -831,3 +831,66 @@ function foo(arg) {
 - 存储大小：` cookie`数据大小不能超过`4k`，`sessionStorage`和`localStorage `虽然也有存储大小的限制，但比`cookie`大得多，可以达到5M或更大
 - 有效时间：`localStorage `存储持久数据，浏览器关闭后数据不丢失除非主动删除数据； `sessionStorage `数据在当前浏览器窗口关闭后自动删除；`cookie`设置的`cookie`过期时间之前一直有效，即使窗口或浏览器关闭
 - 数据与服务器之间的交互方式，` cookie`的数据会自动的传递到服务器，服务器端也可以写`cookie`到客户端； `sessionStorage`和`localStorage`不会自动把数据发给服务器，仅在本地保存
+
+##  null是对象吗？为什么？
+
+null不是对象，在JS最初的版本使用的是32位系统，为了性能考虑低位存储变量的类型信息，000开头代表对象，但是null表示全零，因此错误的判断为object
+
+##  0.1+0.2为什么不等于0.3？
+
+因为0.1和0.2转化为2进制时会出现无限循环，而因为标准位数的限制导致精度损失，从而再次相加的时候不等于0.3。
+
+##  什么是BigInt
+
+BigInt是一种新的数据类型，用于当**整数值**大于Number数据类型支持的范围时。这种数据类型允许我们安全地对 大整数 执行算术操作，表示高分辨率的时间戳，使用大整数id，等等，而不需要使用库。
+
+~~~javascript
+// 方式一：加n
+console.log(1n); // → 1n
+// 方式二：使用构造函数 BigInt
+console.log(BigInt(1)); // → 1n
+
+1n === BigInt(1) // → true
+typeof 1n; // → bigint
+~~~
+
+##  typeof 是否能正确判断类型？
+
+对于原始数据类型，除了null都可以正常显示
+
+~~~javascript
+console.log(typeof 1)
+console.log(typeof 'abc')
+console.log(typeof undefined)
+console.log(typeof true)
+console.log(typeof Symbol())
+console.log(typeof 1n)
+~~~
+
+于引用数据类型，除了函数之外，都会显示"object"
+
+~~~javascript
+typeof [] // 'object'
+typeof {} // 'object'
+typeof console.log // 'function'
+~~~
+
+## Object.is和===有什么区别？
+
+修复了一些特殊情况,比如NaN和+0 ，-0
+
+~~~javascript
+console.log(Object.is(NaN, NaN)) // true
+console.log(Object.is(+0, -0)) // false
+~~~
+
+## 如何判断一个对象是不是空对象
+
+~~~javascript
+// 方法1
+Object.keys(obj).length === 0
+
+// 方法2
+JSON.stringify(obj) === '{}'
+~~~
+
