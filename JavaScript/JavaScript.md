@@ -673,3 +673,35 @@ bind方法和call很相似，第一参数也是`this`的指向，后面传入的
 ![img](https://static.vue-js.com/61efbc20-7cb8-11eb-85f6-6fac77c0c9b3.png)
 
 同步任务进入主线程，即主执行栈，异步任务进入任务队列，主线程内的任务执行完毕为空，会去任务队列读取对应的任务，推入主线程执行。上述过程的不断重复就是事件循环
+
+## 常见的DOM操作
+
+创建节点
+
+* createElement()
+* createTextNode()
+* createAttribute()
+
+增加节点
+
+* appendChild()
+* innerHTML
+
+更新节点
+
+* innerHTML
+* innerText
+* textContent
+* style
+
+删除节点
+
+* removeChild()
+
+查询节点
+
+* querySelector()
+* querySelectorAll()
+
+## 常见的BOM操作
+
