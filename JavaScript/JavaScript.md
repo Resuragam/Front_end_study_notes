@@ -705,3 +705,41 @@ bind方法和call很相似，第一参数也是`this`的指向，后面传入的
 
 ## 常见的BOM操作
 
+* window
+
+  `Bom`的核心对象是`window`，它表示浏览器的一个实例
+
+  因此所有在全局作用域中声明的变量、函数都会变成`window`对象的属性和方法
+
+* location
+
+  `location.reload()`，此方法可以重新刷新当前页面。这个方法会根据最有效的方式刷新页面，如果页面自上一次请求以来没有改变过，页面就会从浏览器缓存中重新加载
+
+* navigator
+
+  `navigator` 对象主要用来获取浏览器的属性，区分浏览器类型。属性较多，且兼容性比较复杂
+
+* screen
+
+  保存的纯粹是客户端能力信息，客户端显示器信息。
+
+* history
+
+  - `history.go()`
+
+  接收一个整数数字或者字符串参数：向最近的一个记录中包含指定字符串的页面跳转，
+
+  ```javascript
+  history.go('maixaofei.com')
+  ```
+
+  当参数为整数数字的时候，正数表示向前跳转指定的页面，负数为向后跳转指定的页面
+
+  ```javascript
+  history.go(3) //向前跳转三个记录
+  history.go(-1) //向后跳转一个记录
+  ```
+
+  - `history.forward()`：向前跳转一个页面
+  - `history.back()`：向后跳转一个页面
+  - `history.length`：获取历史记录数
