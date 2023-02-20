@@ -89,3 +89,9 @@
   <meta property="og:url" content="https://zjgyb.github.io/index.html">
   <meta property="og:site_name" content="tony's blog">
   ```
+
+## 2. src和href的区别
+
+**src**：表示对资源的引用，它指向的内容会嵌入到当前标签所在位置，src会将请求的资源下载到当前的文档当中，如请求js脚本。
+
+**href**：表示超文本引用，它指向一些网络资源，建立与当前元素或者文档的联系，常用在a、link等标签上面。
