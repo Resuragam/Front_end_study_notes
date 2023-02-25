@@ -17,3 +17,7 @@ console.log(Object.prototype.toString.call(2))
 console.log(Object.prototype.toString.call('2'))
 console.log(Object.prototype.toString.call(undefined))
 console.log(Object.prototype.toString.call(function () {}))
+
+console.log('constructor判断')
+console.log((2).constructor === Number)
+console.log((true).constructor === Boolean)
