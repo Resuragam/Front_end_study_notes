@@ -1,139 +1,93 @@
-# HTML
+## HTML
 
-## 1. 常用的meta元素有哪些？
+### 1. src和href的区别
 
-* **charset **
+`src`和`href`都是对外部资源的引用。
 
-  指定**HTML**的编码格式，一般为**utf-8**
+`src`主要是对外部资源的引用，常用于`script`，`img`等标签中，表示引入的外部资源替换当前元素。当浏览器解析时，将资源下载到当前页面。
 
-  ~~~html
-  <meta charset="utf-8">
-  ~~~
+`href`主要表示当前文档与外部资源建立联系，常用于`a`，`link`等标签中，主要用于超文本的引用。
 
-* **name & content**
+### 2. 对HTML语义化的理解
 
-  指定元数据的名称
+语义化是指根据内容的结构化，选择合适的标签。
 
-  - **author**——定义了页面的作者
+优点：
 
-  ```html
-  <meta name="author" content="Tony">
-  ```
+* 对SEO友好，语义化标签便于搜索引擎的爬虫工具搜索有用的信息。
+* 对开发者友好，语义化标签表现力强，便于开发者阅读代码结构，增加可维护性。
 
-  - **keywords**——为搜索引擎提供关键字
+### 3. DOCTYPE(⽂档类型) 的作⽤
 
-  ```html
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  ```
+`DOCTYPE`是`HTML`中标准的文档类型声明，常用于指定浏览器以何种文档类型定义解析当前文档。
 
-  - **description**——对网页整体的描述
+浏览器主要的渲染模式分为：
 
-  ```html
-  <meta name="description" content="My tutorials on HTML, CSS and JavaScript">
-  ```
+* CSS1Compact：标准模式，以W3C的标准解析当前文档
+* BackCompact：怪异模式，浏览器以自身的标准解析当前文档，会向后兼容进行展示。
 
-  * **viewport**——对页面视图相关进行定义
+### 4. script标签中defer和async的区别
 
-  ```
-  width=device-width——将页面宽度设置为跟随屏幕宽度变化而变化
-  initial-scale=1.0——设置浏览器首次加载页面时的初始缩放比例(0.0-10.0正数)
-  maximum-scale=1.0——允许用户缩放的最大比例(0.0-10.0正数)，必须大于等于minimum-scale
-  minimum-scale=1.0——允许用户缩放的最小比例(0.0-10.0正数)，必须小于等于maximum-scale
-  user-scalable=no——是否允许用户手动缩放(yes或者no)
-  1<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minmum-scale=1.0">
-  ```
-
-  - **generator**——包含生成页面软件的标识符
-
-  ```html
-  <meta name="generator" content="Hexo 3.8.0">
-  ```
-
-  - **theme-color**——定义主题颜色
-
-  ```html
-  <meta name="theme-color" content="#222">
-  ```
-
-* **http-equiv & content**
-
-  * **refresh**——刷新文档的时间
-
-  ~~~html
-  <meta http-equiv="refresh" content="30">
-  ~~~
-
-  - X-UA-Compatible——告知浏览器以何种版本渲染界面。下面的例子有限使用IE最新版本
-
-  ```html
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  ```
-
-  关于是否有必要使用这一条在stack overflow尚且有争议。个人认为如果不想兼容低版本的IE，可以直接忽略这一条。
-
-  - Cache-Control——请求和响应遵循的缓存机制，可以声明缓存的内容，修改过期时间，可多次声明
-
-  > no-transform——不得对资源进行转换或转变。 no-siteapp——禁止百度进行转码
-
-  ```html
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-  ```
-
-  - property & content
-
-  可以让网页成为一个富媒体对象，同意网页内容被其他网站引用，同时在应用的时候不会只是一个链接，会提取相应的信息展现给用户。
-
-  ```html
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zjgyb.github.io/index.html">
-  <meta property="og:site_name" content="tony's blog">
-  ```
-
-## 2. src和href的区别
-
-**src**：表示对资源的引用，它指向的内容会嵌入到当前标签所在位置，src会将请求的资源下载到当前的文档当中，如请求js脚本。
-
-**href**：表示超文本引用，它指向一些网络资源，建立与当前元素或者文档的联系，常用在a、link等标签上面。
-
-## 3. 对HTML语义化的理解
-
-**语义化是根据内容的结构化，选择合适的标签。**
-
-语义化的优点：
-
-* 对机器友好，语义化标签有助于搜索引擎的爬虫爬取有效信息，有利于SEO。
-* 对开发者友好，语义化标签增强了可读性，结构更加清晰，便于团队的开发与维护。
-
-~~~html
-<header></header>  头部
-
-<nav></nav>  导航栏
-
-<section></section>  区块（有语义化的div）
-
-<main></main>  主要区域
-
-<article></article>  主要内容
-
-<aside></aside>  侧边栏
-
-<footer></footer>  底部
-~~~
-
-## 4. DOCTYPE(⽂档类型) 的作⽤
-
-DOCTYPE是HTML5中一种标准的文档类型声明，用来**告诉浏览器应该以何种文档定义解析文档**。
-
-* **标准模式**：默认模式，告诉浏览器以W3C的标准解析渲染页面。
-* **怪异模式**：浏览器以自己的怪异模式解析渲染页面。
-
-## 5. script标签中defer和async的区别
-
-defer和async都是**异步加载外部的JS文件，它们都不会阻塞当前页面的渲染解析**。
+`script`标签中`defer`和`async`都表示异步加载脚本。
 
 区别：
 
-* **执行顺序**：当存在多个async属性的标签时，不能保证加载的顺序，但是defer会按照加载顺序执行。
+* 执行顺序：`async`不能保证脚本的执行顺序，但是`defer`脚本按照加载顺序进行执行。
+* 是否并行执行：`async`脚本的加载与执行和文档的加载执行时并行的，但是`defer`脚本的加载与文档的加载是并行的，但是`defer`脚本的执行会等到文档完全加载完成之后。
 
-* **脚本是否并行执行**：async属性表示文档的加载解析与脚本的加载执行时并行的，但是defer属性的脚本需要等到文档解析完成之后才能加载执行。
+### 5. 常⽤的meta标签有哪些
+
+`meta`标签用来表示当前的页面的基本信息。包含`name`，`content`两个属性。
+
+* charset：文档编码类型
+* keyword：文档搜索关键词
+* description：文档的描述
+
+### 6. HTML5有哪些更新
+
+### 7. img的srcset属性的作⽤？
+
+`srcset`属性常用于响应式设计，表示在不同的屏幕密度下，展示不同的图片信息。
+
+### 8. 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+
+行内元素：`span`，`a`，`selection`
+
+块级元素：`div`，`h1~h6`，`p`，`ul`，`ol`
+
+空元素：`img`，`br`，`meta`
+
+### 9. 说一下 web worker
+
+在`HTML`页面执行js脚本时，浏览器的状态是无法点击变更的，会阻塞当前浏览器的执行与响应，直到脚本执行完毕。
+
+`web worker` 是运行在后台的 js，独立于其他脚本，不会影响页面的性能，并且通过`postMessage`方法将结果传回主线程。
+
+* 检测浏览器对`web worker`的支持性
+* 创建`web worker`文件
+* 创建`web worker`对象
+
+### 10. title与h1的区别、b与strong的区别、i与em的区别？
+
+* `title`只表示标题，`h1`表示内容结构
+* `b`表示加粗字体，`strong`表示加强语气
+* `i`表示斜体，`em`表示强调的文本
+
+### 11. Canvas和SVG的区别
+
+`SVG`是矢量图，是基于`XML`语言描述的2D图形。
+
+`Canvas`是画布，表示`JavaScript`语言绘制的2D图形，是逐渐渲染绘制的。
+
+区别：
+
+* `SVG`不依赖分辨率，`Canvas`依赖分辨率
+* `SVG`支持事件处理器，`Canvas`不支持事件处理器
+* `SVG`渲染能力较强，`Canvas`渲染能力较弱
+* `SVG`不适合进行复杂游戏开发，`Canvas`适合多图形的游戏开发
+
+### 12. head 标签有什么作用，其中什么标签必不可少？
+
+`head` 标签表示文档的头部，通常包含文档的基本信息，包括文档的标题，其他的文档关系的等。
+
+其中`title`标签是必需的。
