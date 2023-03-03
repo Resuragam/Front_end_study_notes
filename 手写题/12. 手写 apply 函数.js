@@ -1,4 +1,4 @@
-Function.prototype.myApply = function (context) {
+Function.prototype.myApply = function (context,...args) {
     // 判断调用者的类型
     if(typeof this !== 'function')
         return 'error type'
@@ -11,7 +11,7 @@ Function.prototype.myApply = function (context) {
     context[key] = this
 
     // 记录函数的结果
-    let result = arguments[1] ? context[key](...arguments[1]) : context[key]()
+    let result = args[0] ? context[key](...args[0]) : context[key]()
     delete context[key]
     return result
 }
