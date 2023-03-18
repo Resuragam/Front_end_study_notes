@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/5. 最长回文子串.js.iml" filepath="$PROJECT_DIR$/.idea/5. 最长回文子串.js.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LeetCode 热题 HOT 100.iml" filepath="$PROJECT_DIR$/.idea/LeetCode 热题 HOT 100.iml" />
     </modules>
   </component>
