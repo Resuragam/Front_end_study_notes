@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "657ba49bbaa6476f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0348706b9d32f7d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73b2609fef24091f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vue/Vue项目.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "abac0815044fb61f",
+    "type": "split",
+    "children": [
+      {
+        "id": "5df41a57e83569aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f707bab3046dd6c7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "851267d5f7ccc175",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "389789f753a44136",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "001b685bc2fc075e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ac45b36f2ce0337",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9086e5eed961fd5a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Vue/Vue项目.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3a6bc993850bf0da",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Vue/Vue项目.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4d43529e6cefe910",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "328b57ea3fb3f855",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Vue/Vue项目.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "73b2609fef24091f",
+  "lastOpenFiles": [
+    "Vue/Vue.md",
+    "Vue/Vue项目.md",
+    "Vue/组件通信.md",
+    "Vue/生命周期.md",
+    "Nginx/Nginx.md",
+    "JavaScript/内存泄漏/内存泄漏.md",
+    "JavaScript/ES6/ES6面经.md",
+    "Pasted image 20230319200619.png",
+    "Pasted image 20230319200512.png.md",
+    "87AEFE7F95D55360BAFAC794407C5EB9.jpg",
+    "Pasted image 20230319200512.png",
+    "Pasted image 20230319200447.png",
+    "未命名.md",
+    "CSS/定位与浮动.md",
+    "Nginx",
+    "CSS/场景应用.md",
+    "公司投递情况.md"
+  ]
+}
