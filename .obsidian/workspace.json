@@ -4,18 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "9319760e8335d32a",
+        "id": "bf65acf31fab4df7",
         "type": "tabs",
         "children": [
           {
-            "id": "991160ffc72582b3",
+            "id": "8bf335a76f41b536",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "前端工程化/Webpack打包优化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5ff04bf6d2ee0eb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "前端工程化/Webpack基本知识.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce52b298634d02d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试经历/腾讯运营开发一面.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ca0368a97688ccb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试经历/腾讯前端开发三面.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25d0463c623ae7f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "前端工程化/Webpack打包优化.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,6 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "面试经历/腾讯前端开发三面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "面试经历/腾讯前端开发三面.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +173,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "面试经历/腾讯前端开发三面.md"
+              }
             }
           }
         ]
@@ -138,26 +195,31 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "991160ffc72582b3",
+  "active": "4ca0368a97688ccb",
   "lastOpenFiles": [
     "面试经历/腾讯运营开发一面.md",
+    "面试经历/腾讯前端开发二面.md",
+    "面试经历/腾讯前端开发三面.md",
+    "未命名",
+    "计算机网络/TCP与UDP协议.md",
+    "计算机网络/HTTP协议.md",
+    "前端工程化/Webpack前端性能优化.md",
+    "前端工程化/Webpack打包优化.md",
+    "前端工程化/Webpack基本知识.md",
+    "前端安全/Web攻击.md",
+    "腾讯前端开发一面.pdf",
     "面试经历/蓝网科技一面.md",
     "面试经历/安恒信息一面.md",
     "面试经历/亚信安全.md",
     "Nginx/Nginx.md",
-    "前端工程化/Webpack打包优化.md",
     "JavaScript手写题/JavaScript基础/16. for..of遍历对象.js",
-    "前端工程化/Webpack基本知识.md",
-    "前端工程化/Webpack前端性能优化.md",
     "性能优化/Webpack优化.md",
     "前端安全/前端鉴权.md",
     "前端工程化",
-    "前端安全/Web攻击.md",
     "计算机网络/HTTP协议比较.pdf",
     "计算机网络/计算机网络面经.md",
     "计算机网络/DNS协议介绍.md",
     "前端安全",
-    "计算机网络/HTTP协议.md",
     "JavaScript/JavaScript.md",
     "JavaScript/ES6/ES6面经.md",
     "Vue/Vue项目.md",
@@ -171,9 +233,6 @@
     "Pasted image 20230319200512.png",
     "Pasted image 20230319200447.png",
     "未命名.md",
-    "CSS/定位与浮动.md",
-    "Nginx",
-    "CSS/场景应用.md",
-    "公司投递情况.md"
+    "Nginx"
   ]
 }
