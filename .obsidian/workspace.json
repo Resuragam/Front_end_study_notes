@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "d04d95a3b40d7a62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5add5ab5a8445bdc",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1的特性.md",
+                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1的特性.md",
+                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1的特性.md"
+                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md"
               }
             }
           },
@@ -180,10 +192,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9f7a7d25751e97f4",
+  "active": "d04d95a3b40d7a62",
   "lastOpenFiles": [
-    "计算机网络/TCPIP网络模型.md",
     "计算机网络/HTTP篇/HTTP1.1的特性.md",
+    "计算机网络/HTTP篇/HTTP1.1优化方案.md",
+    "TCPIP网络模型.pdf",
+    "计算机网络/TCPIP网络模型.md",
     "计算机网络/HTTP篇/HTTP 基本概念.md",
     "计算机网络/TCP与UDP协议.md",
     "计算机网络/HTTP状态码.md",
@@ -193,7 +207,6 @@
     "计算机网络/计算机网络面经.md",
     "计算机网络/HTTP篇",
     "未命名",
-    "TCPIP网络模型.pdf",
     "腾讯前端开发一面.pdf",
     "网络层.webp",
     "前端工程化/Webpack打包优化.md",
@@ -215,8 +228,6 @@
     "前端安全",
     "JavaScript/JavaScript.md",
     "JavaScript/ES6/ES6面经.md",
-    "Vue/Vue项目.md",
-    "Vue/Vue.md",
     "Pasted image 20230319200619.png",
     "87AEFE7F95D55360BAFAC794407C5EB9.jpg",
     "Pasted image 20230319200512.png",
