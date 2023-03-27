@@ -1,3 +1,9 @@
+```ad-note
+title: Links
+* [在 CSS 中实现图像合并 - CSS：层叠样式表 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Images/Implementing_image_sprites_in_CSS)
+* 
+```
+
 我们可以从三种优化方案来优化 HTTP/1.1 协议：
 
 * **尽量避免发送 HTTP 请求**;
@@ -6,8 +12,7 @@
 
 下面，就针对这三种思路具体看看有哪些优化方法。
 
-![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost4@main/%E7%BD%91%E7%BB%9C/http1.1%E4%BC%98%E5%8C%96/%E4%BC%98%E5%8C%96http1.1%E6%8F%90%E7%BA%B2.png)
-
+![[HTTP1.1的优化方案-思维导图.png]]
 
 ## 如何避免发送 HTTP 请求？
 ---
@@ -101,6 +106,13 @@
 可以看到，**合并请求的方式就是合并资源，以一个大资源的请求替换多个小资源的请求**。
 
 但是这样的合并请求会带来新的问题，**当大资源中的某一个小资源发生变化后，客户端必须重新下载整个完整的大资源文件**，这显然带来了额外的网络消耗。
+
+```ad-attention
+title: 备注
+备注：当使用 HTTP/2 时，使用多个小流量请求实际上可能更为带宽友好。
+
+原因：精灵图的作用时减少发送 HTTP 请求，从而减少网络开销，主要应用在请求应答一来一回的模式下，但其实 HTTP/2.0 支持请求并行和多路复用，精灵图的优势就微乎其微。
+```
 
 ### 延迟发送请求
 

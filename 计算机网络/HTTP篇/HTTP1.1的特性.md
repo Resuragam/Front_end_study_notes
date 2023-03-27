@@ -1,7 +1,10 @@
 ```ad-note
+title: Links
 * [HTTP 特性 | 小林coding](https://xiaolincoding.com/network/2_http/http_interview.html#http-%E7%89%B9%E6%80%A7)
 * [HTTP | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
 ```
+
+![[HTTP1.1的特性-思维导图.png]]
 
 ## HTTP/1.1 的优点
 ---
@@ -13,10 +16,12 @@ HTTP 基本的报文格式就是 `header + body`，头部信息也是 `key-val
 
 HTTP 协议里的各类请求方法、URI/URL、状态码、头字段等每个组成要求都没有固定死，允许开发人员自定义和扩充。
 
-同时 HTTP 协议工作在应用层，那它**下层可以随便变化**，比如：
+同时 HTTP 协议工作在应用层，那它**下层可以随便变化**。
 
+```ad-example
 * HTTPS 就是在 HTTP 与 TCP之间增加了 SSL/TLS 安全传输层；
 * HTTP/1.1 和 HTTP/2.0 传输协议使用的是 TCP 协议，但是 HTTP/3.0 传输协议改用了 UDP 协议
+```
 
 **3. 应用广泛和跨平台**
 

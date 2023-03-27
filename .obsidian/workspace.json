@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e5096b4bd852ae85",
+        "id": "6c817d4d9a13c595",
         "type": "tabs",
         "children": [
           {
-            "id": "0bde3a49c26a8c3b",
+            "id": "d01ae76f013db3ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络/TCPIP网络模型.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f7a7d25751e97f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1的特性.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d04d95a3b40d7a62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5add5ab5a8445bdc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机网络/TCPIP网络模型.md",
+                "file": "数据结构/树和二叉树.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md",
+                "file": "数据结构/树和二叉树.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md",
+                "file": "数据结构/树和二叉树.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,16 +125,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机网络/HTTP篇/HTTP1.1优化方案.md"
+                "file": "数据结构/树和二叉树.md"
               }
-            }
-          },
-          {
-            "id": "a008b9ed36ff9e64",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           }
         ],
@@ -192,13 +147,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d04d95a3b40d7a62",
+  "active": "d01ae76f013db3ce",
   "lastOpenFiles": [
+    "数据结构/Images/完美二叉树.png",
+    "数据结构/Images/完全二叉树.png",
+    "数据结构/Images/未命名绘图.png",
+    "数据结构/Images/树的基本结构.png",
+    "数据结构/树和二叉树.md",
+    "数据结构/Images/完全二叉树.drawio",
+    "数据结构/Images/完美二叉树.drawio",
     "计算机网络/HTTP篇/HTTP1.1的特性.md",
+    "计算机网络/HTTP篇/HTTP 基本概念.md",
+    "数据结构/Images",
     "计算机网络/HTTP篇/HTTP1.1优化方案.md",
+    "浏览器/谈谈你对浏览器中进程和线程的理解.md",
+    "计算机网络/HTTP篇/HTTP2.0 的特性.md",
+    "数据结构",
+    "浏览器/浏览器渲染原理.md",
+    "浏览器/浏览器同源策略.md",
+    "浏览器/浏览器缓存.md",
+    "浏览器/浏览器本地存储.md",
+    "面试经历/2023年春招投递.md",
+    "面试经历/公司投递情况.md",
+    "计算机网络/Images/HTTP1.1的特性-思维导图.png",
+    "计算机网络/Images/HTTP1.1的优化方案-思维导图.png",
+    "计算机网络/Images/HTTP1.1的特性-思维导图.xmind",
+    "计算机网络/Images",
+    "计算机网络/新建文件夹",
     "TCPIP网络模型.pdf",
     "计算机网络/TCPIP网络模型.md",
-    "计算机网络/HTTP篇/HTTP 基本概念.md",
     "计算机网络/TCP与UDP协议.md",
     "计算机网络/HTTP状态码.md",
     "计算机网络/HTTPS协议.md",
@@ -206,7 +183,6 @@
     "计算机网络/DNS协议介绍.md",
     "计算机网络/计算机网络面经.md",
     "计算机网络/HTTP篇",
-    "未命名",
     "腾讯前端开发一面.pdf",
     "网络层.webp",
     "前端工程化/Webpack打包优化.md",
@@ -215,23 +191,9 @@
     "面试经历/腾讯前端开发三面.md",
     "面试经历/腾讯运营开发一面.md",
     "前端工程化/Webpack前端性能优化.md",
-    "前端安全/Web攻击.md",
-    "面试经历/蓝网科技一面.md",
-    "面试经历/安恒信息一面.md",
-    "面试经历/亚信安全.md",
-    "Nginx/Nginx.md",
-    "JavaScript手写题/JavaScript基础/16. for..of遍历对象.js",
-    "性能优化/Webpack优化.md",
-    "前端安全/前端鉴权.md",
-    "前端工程化",
-    "计算机网络/HTTP协议比较.pdf",
-    "前端安全",
-    "JavaScript/JavaScript.md",
-    "JavaScript/ES6/ES6面经.md",
     "Pasted image 20230319200619.png",
     "87AEFE7F95D55360BAFAC794407C5EB9.jpg",
     "Pasted image 20230319200512.png",
-    "Pasted image 20230319200447.png",
-    "Nginx"
+    "Pasted image 20230319200447.png"
   ]
 }
