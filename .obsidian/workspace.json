@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e734389ba01ccb0a",
+            "id": "4e9f201dc3a8c94c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Vue/数据驱动.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Vue/数据驱动.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Vue/数据驱动.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Vue/数据驱动.md"
+              }
             }
           }
         ],
@@ -139,8 +147,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e734389ba01ccb0a",
+  "active": "4e9f201dc3a8c94c",
   "lastOpenFiles": [
+    "Vue/Vuex.md",
+    "Vue/数据驱动.md",
+    "Vue/Vue.md",
     "面试经历/美团二面.md",
     "面试经历/美团一面.md",
     "JavaScript/JavaScript继承.md",
@@ -179,9 +190,6 @@
     "计算机网络/Images",
     "计算机网络/新建文件夹",
     "TCPIP网络模型.pdf",
-    "计算机网络/TCPIP网络模型.md",
-    "计算机网络/TCP与UDP协议.md",
-    "计算机网络/HTTP协议.md",
     "计算机网络/HTTP篇",
     "网络层.webp",
     "Pasted image 20230319200619.png",
