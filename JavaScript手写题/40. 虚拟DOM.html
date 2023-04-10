@@ -51,8 +51,26 @@
      * */
     const _createElm = vnode => {
         // 补全代码
-
+        let {tag, props, text, children} = vnode
+        if(typeof tag === 'string') {
+            vnode.el = document.createElement(tag)
+            _setProps(vnode.el, props)
+            vnode.el.append(document.createTextNode(text))
+            children.forEach((child) => {
+                vnode.el.append(_createElm(child))
+            })
+        }else {
+            vnode.el = document.createTextNode(text)
+        }
+        return vnode.el
     }
+
+    const _setProps = (el, props) => {
+        for (let key in props) {
+            el.setAttribute(key, props[key])
+        }
+    }
+    document.body.append(_createElm(vnode))
 </script>
 </body>
 </html>
