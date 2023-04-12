@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9b43c3039a7a8626",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试经历/腾讯前端开发HR面.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vue/数据驱动.md",
+                "file": "面试经历/腾讯前端开发HR面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vue/数据驱动.md",
+                "file": "面试经历/腾讯前端开发HR面.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/数据驱动.md"
+                "file": "面试经历/腾讯前端开发HR面.md"
               }
             }
           }
@@ -147,10 +160,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4e9f201dc3a8c94c",
+  "active": "9b43c3039a7a8626",
   "lastOpenFiles": [
-    "Vue/Vuex.md",
     "Vue/数据驱动.md",
+    "面试经历/腾讯前端开发HR面.md",
+    "Vue/Vuex.md",
     "Vue/Vue.md",
     "面试经历/美团二面.md",
     "面试经历/美团一面.md",
@@ -183,7 +197,6 @@
     "浏览器/浏览器缓存.md",
     "浏览器/浏览器本地存储.md",
     "面试经历/2023年春招投递.md",
-    "面试经历/公司投递情况.md",
     "计算机网络/Images/HTTP1.1的特性-思维导图.png",
     "计算机网络/Images/HTTP1.1的优化方案-思维导图.png",
     "计算机网络/Images/HTTP1.1的特性-思维导图.xmind",
