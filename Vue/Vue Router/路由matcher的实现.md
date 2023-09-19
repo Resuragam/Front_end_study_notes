@@ -92,3 +92,136 @@ function mergeOptions<T extends object>(
 ```
 
 因此会先判断全局配置`globalOptions`是否存在当前配置属性，如果`globalOptions`不存在，即使子路由表配置也会无效，如果存在，会优先使用子路由表`record`的配置。
+
+#### 处理别名参数alias
+
+`alias`表示路由的别名，和路由重定向不同，它不会修改访问的`url`，所以在处理`alias`参数的时候，相当于新增一条可以访问的路由。
+
+```ts
+   // 判断别名路由，如果存在别名，全部转化为数组形式 alias: "a" -> alias: ["a"], 并且存储到 aliases 进行遍历操作
+    if ('alias' in record) {
+      const aliases =
+        typeof record.alias === 'string' ? [record.alias] : record.alias!
+      // 处理别名路由
+      for (const alias of aliases) {
+        normalizedRecords.push(
+          assign({}, mainNormalizedRecord, {
+            // this allows us to hold a copy of the `components` option
+            // so that async components cache is hold on the original record
+            components: originalRecord
+              ? originalRecord.record.components
+              : mainNormalizedRecord.components,
+            path: alias,
+            // we might be the child of an alias
+            aliasOf: originalRecord
+              ? originalRecord.record
+              : mainNormalizedRecord,
+            // the aliases are always of the same kind as the original since they
+            // are defined on the same record
+          }) as typeof mainNormalizedRecord
+        )
+      }
+    }
+```
+
+需要注意的是，在处理`alias`的时候，会统一转化为数组`aliases`进行遍历。在遍历的过程当中往`normalizedRecords`新增一条标准路由对象`record`。
+
+#### 遍历normalizedRecords，处理嵌套路由的path参数和生成匹配器
+
+```ts
+for (const normalizedRecord of normalizedRecords) {
+      const { path } = normalizedRecord
+      if (parent && path[0] !== '/') {
+        // 判断子路由的路径是否是绝对路径还是相对路径
+        // path: "list" -> parent + list
+        // path: "/list" -> /list
+        const parentPath = parent.record.path
+        // 连接符
+        const connectingSlash =
+          parentPath[parentPath.length - 1] === '/' ? '' : '/'
+        normalizedRecord.path =
+          parent.record.path + (path && connectingSlash + path)
+      }
+      // create the object beforehand, so it can be passed to children
+      matcher = createRouteRecordMatcher(normalizedRecord, parent, options)
+    }
+```
+
+首先会处理`path`，此时存在嵌套路由的时候，会存在`parent`，并且此时子路由是相对路径，不存在`/`，此时需要判断`parent`的`path`最后是否携带`/`连接符`connectingSlash`，最后对父子路由的`path`进行拼接得到当前路由的`path`。
+
+处理完`path`之后，会把标准路由对象传入`createRouteRecordMatcher`方法当中，生成相应的匹配器，帮助后续的`path`匹配到相对应的路由。
+
+#### 处理originRecord
+
+```ts
+for (const normalizedRecord of normalizedRecords) {
+	if (originalRecord) {
+	        originalRecord.alias.push(matcher)
+	      } else {
+	        // otherwise, the first record is the original and others are aliases
+	        originalMatcher = originalMatcher || matcher
+	        if (originalMatcher !== matcher)  originalMatcher.alias.push(matcher)
+	        // remove the route if named and only for the top record (avoid in nested calls)
+	        // this works because the original record is the first one
+	        if (isRootAdd && record.name && !isAliasRecord(matcher))
+	          removeRoute(record.name)
+	      }
+ }
+```
+
+当`originalRecord`存在的时候，说明此时就是别名路由，直接把当前的`matcher`放入`originalRecord.alias`当中。
+
+当`originalRecord`不存在的时候，将第一个`matcher`当中`originalRecord`进行处理，表示他是主路由，其他的都是别名路由。当再次遍历的时候，当`matcher`和`originalMatcher`不相等的时候，说明此时是别名路由`matcher`，放入到`originalMatcher`当中。
+
+`isAliasRecord`方法会判断是否是`record`和`record`的祖先路由是否是别名路由，然后删除非别名路由。
+
+#### 循环遍历子路由，循环调用addRoute方法处理子路由
+
+```ts
+function addRoute( /*相关参数*/ ) {
+  for (const normalizedRecord of normalizedRecords) {
+    // 5. 遍历子路路由，循环调用 addRoute 方法处理子路由
+    if (mainNormalizedRecord.children) {
+      const children = mainNormalizedRecord.children
+      for (let i = 0; i < children.length; i++) {
+        addRoute(
+          children[i],
+          matcher,
+          originalRecord && originalRecord.children[i]
+        )
+      }
+    }
+  }
+}
+
+```
+
+#### 插入matcher
+
+```ts
+function addRoute( /*相关参数*/ ) {
+  for (const normalizedRecord of normalizedRecords) {
+    // 排除掉没有定义 components、name、redirect 其中一个的 matcher，避免无法展示路由内容
+    if (
+      (matcher.record.components &&
+        Object.keys(matcher.record.components).length) ||
+      matcher.record.name ||
+      matcher.record.redirect
+    ) {
+      insertMatcher(matcher)
+    }
+  }
+}
+```
+
+在插入路由之前，排除掉没有定义`components`、`name`、`redirect`其中一个的 `matcher`，避免无法展示路由内容。然后调用`insertMatcher`方法插入到`matchers`匹配数组当中。
+
+#### 删除原始路由matcher后的matcher集合
+
+```ts
+function addRoute( /*相关参数*/ ) {
+  return originalMatcher
+      ? () => removeRoute(originalMatcher!) 
+      : noop
+}
+```
