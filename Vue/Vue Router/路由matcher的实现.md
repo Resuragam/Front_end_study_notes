@@ -22,6 +22,5 @@ const router = createRouter(options)
 
 `createRouterMatcher`方法首先定义了`matchers`和`matcherMap`两个变量，分别存储`matcher`对象和（TODO: matcherMap的作用）。定义了 `getRecordMatcher`，`addRoute`，`removeRoute`，`getRoutes`，`insertMatcher`和`resolve`一共六个方法。主要遍历路由表调用`addRoute`实现`matcher`的生成，最终返回`{ addRoute, resolve, removeRoute, getRoutes, getRecordMatcher }`帮助`matcher`进行增删改查的操作。
 
-![[createRourerMatcher源码.webp]]
-
+![](../image/createRourerMatcher源码.webp)
 
