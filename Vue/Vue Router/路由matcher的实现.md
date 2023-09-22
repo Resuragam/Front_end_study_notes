@@ -126,6 +126,14 @@ function mergeOptions<T extends object>(
 
 需要注意的是，在处理`alias`的时候，会统一转化为数组`aliases`进行遍历。在遍历的过程当中往`normalizedRecords`新增一条标准路由对象`record`。
 
+```ts
+const normalizedRecords: (typeof mainNormalizedRecord)[] = [
+      mainNormalizedRecord,
+    ]
+```
+
+配置上一步初始化`normalizedRecords`可以保证第一条路由肯定不是别名路由，帮助后面判断是否是别名路由进行判断，保证存在别名路由的时候，`originalRecord`是第一条路由的路由，别名路由是第一条路由的别名。
+
 #### 遍历normalizedRecords，处理嵌套路由的path参数和生成匹配器
 
 ```ts
