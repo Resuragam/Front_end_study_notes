@@ -4,47 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a836100d4ea6595e",
+        "id": "806a00eb0cd60e9f",
         "type": "tabs",
         "children": [
           {
-            "id": "9f35744e18a19780",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面试经历/2023年秋招/云智一面.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6900a22dc3a13db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面试经历/2023年秋招/云智二面.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d99ce2425561b3b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面试经历/2023年秋招/快手二面.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c877d428148a97a",
+            "id": "01a3c907728647d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2e335e543a294a41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知乎一面.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知乎一面.md",
+                "file": "JavaScript/Array/JavaScript数组常用方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知乎一面.md",
+                "file": "JavaScript/Array/JavaScript数组常用方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知乎一面.md"
+                "file": "JavaScript/Array/JavaScript数组常用方法.md"
               }
             }
           },
@@ -222,8 +173,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2e335e543a294a41",
+  "active": "01a3c907728647d2",
   "lastOpenFiles": [
+    "JavaScript/JavaScript继承.md",
     "知乎一面.md",
     "JavaScript/Array/JavaScript数组常用方法.md",
     "面试经历/2023年秋招/2023年秋招投递.md",
@@ -262,7 +214,6 @@
     "面试经历/2023暑期实习/美团一面.md",
     "面试经历/2023暑期实习/美团二面.md",
     "面试经历/2023暑期实习/蓝网科技一面.md",
-    "面试经历/2023暑期实习/安恒信息一面.md",
     "面试经历/2023暑期实习",
     "数据结构/Images/完美二叉树.png",
     "数据结构/Images/完全二叉树.png",
