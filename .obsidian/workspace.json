@@ -13,55 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/Array/JavaScript数组常用方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f15325aa53edd871",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/作用域和闭包/词法作用域.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5cb9a8093ea64b9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/作用域和闭包/欺骗词法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b028ea8982165e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面试经历/2023年秋招/美团一面.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7cc073d8aece30e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript/作用域和闭包/欺骗词法.md",
+                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,6 +21,7 @@
           }
         ],
         "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,6 +96,7 @@
               "type": "backlink",
               "state": {
                 "file": "JavaScript/作用域和闭包/欺骗词法.md",
+                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,6 +114,7 @@
               "type": "outgoing-link",
               "state": {
                 "file": "JavaScript/作用域和闭包/欺骗词法.md",
+                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,11 +156,20 @@
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency"
+                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md"
               }
+            }
+          },
+          {
+            "id": "2b74a26342bd8015",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -225,6 +189,26 @@
   "active": "7cc073d8aece30e6",
   "lastOpenFiles": [
     "JavaScript/作用域和闭包/LHS查询和RHS查询.md",
+  "active": "a7de555cc0381c76",
+  "lastOpenFiles": [
+    "小游戏开发/Cocos Creator/动画系统/动画组件参考.md",
+    "小游戏开发/Cocos Creator/images/动画系统/动画组件属性.png",
+    "Pasted image 20231025120051.png",
+    "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
+    "小游戏开发/Cocos Creator/images/动画系统/动画剪辑.png",
+    "小游戏开发/Cocos Creator/images/动画系统",
+    "小游戏开发/Cocos Creator/images",
+    "动画剪辑.png",
+    "小游戏开发/Cocos Creator/动画系统",
+    "小游戏开发/Cocos Creator/系统事件.md",
+    "面试经历/2023年秋招/2023年秋招投递.md",
+    "小游戏开发/Cocos Creator",
+    "Untitled/Untitled",
+    "Untitled",
+    "小游戏开发",
+    "前端书籍/Web性能权威指南.pdf",
+    "前端书籍/你不知道的JavaScript（上卷）.pdf",
+    "前端书籍/高性能JavaScript.pdf",
     "面试经历/2023年秋招/美团二面.md",
     "JavaScript/Array/JavaScript数组常用方法.md",
     "JavaScript/作用域和闭包/欺骗词法.md",
@@ -270,5 +254,7 @@
     "数据结构/Images/树的基本结构.png",
     "计算机网络/Images/HTTP1.1的特性-思维导图.png",
     "计算机网络/Images/HTTP1.1的优化方案-思维导图.png"
+    "JavaScript/作用域和闭包/LHS查询和RHS查询.md",
+    "JavaScript/作用域和闭包/词法作用域.md"
   ]
 }
