@@ -1,52 +1,39 @@
 {
   "main": {
-    "id": "657ba49bbaa6476f",
+    "id": "1c28af217d2e611c",
     "type": "split",
     "children": [
       {
-        "id": "806a00eb0cd60e9f",
+        "id": "6658dd9ed0490020",
         "type": "tabs",
         "children": [
           {
-            "id": "01a3c907728647d2",
+            "id": "050aa802c4b5a931",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "29140d16018658f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Vue/Vue.js设计与实现/响应系统/响应系统的作用与实现.md",
+                "file": "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "abac0815044fb61f",
+    "id": "6dbb7fd429fb3c03",
     "type": "split",
     "children": [
       {
-        "id": "5df41a57e83569aa",
+        "id": "0c4c92c6feb6e9e3",
         "type": "tabs",
         "children": [
           {
-            "id": "f707bab3046dd6c7",
+            "id": "5fd3c8007bf79448",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +43,7 @@
             }
           },
           {
-            "id": "851267d5f7ccc175",
+            "id": "6c9b7390f9f9b0ec",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,15 +58,7 @@
             }
           },
           {
-            "id": "389789f753a44136",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "e327c1cf93b43772",
+            "id": "774773c1ca3e70ba",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -90,25 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.5
+    "width": 300
   },
   "right": {
-    "id": "001b685bc2fc075e",
+    "id": "3a18687fc29bcb60",
     "type": "split",
     "children": [
       {
-        "id": "0ac45b36f2ce0337",
+        "id": "33d71c44a7535ec9",
         "type": "tabs",
         "children": [
           {
-            "id": "9086e5eed961fd5a",
+            "id": "bf2bc01ffe86b039",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/作用域和闭包/欺骗词法.md",
-                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
-                "file": "Vue/Vue.js设计与实现/响应系统/响应系统的作用与实现.md",
+                "file": "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,21 +97,19 @@
             }
           },
           {
-            "id": "3a6bc993850bf0da",
+            "id": "78b515ba54dd9899",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/作用域和闭包/欺骗词法.md",
-                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
-                "file": "Vue/Vue.js设计与实现/响应系统/响应系统的作用与实现.md",
+                "file": "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "4d43529e6cefe910",
+            "id": "bfe7dc05ae8dc93a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -145,129 +120,48 @@
             }
           },
           {
-            "id": "328b57ea3fb3f855",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Vue/Vue.js设计与实现/响应系统/响应系统的作用与实现.md"
-              }
-            }
-          },
-          {
-            "id": "951d83ccb380569a",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "5674b25c5ae25f6b",
+            "id": "b06eb4f0e07beedd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency"
-                "file": "小游戏开发/Cocos Creator/动画系统/动画剪辑.md"
               }
             }
           },
           {
-            "id": "2b74a26342bd8015",
+            "id": "9961e7ce495629d4",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md"
+              }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "29140d16018658f1",
+  "active": "050aa802c4b5a931",
   "lastOpenFiles": [
-    "Vue/Vue.js设计与实现/渲染器的设计.md",
-    "Vue/Vue.js设计与实现/响应系统/响应系统的作用与实现.md",
-    "Vue/Vue.js设计与实现/响应系统",
-    "Vue/Vue.js设计与实现",
-    "JavaScript/作用域和闭包/LHS查询和RHS查询.md",
-  "active": "a7de555cc0381c76",
-  "lastOpenFiles": [
-    "小游戏开发/Cocos Creator/动画系统/动画组件参考.md",
-    "小游戏开发/Cocos Creator/images/动画系统/动画组件属性.png",
-    "Pasted image 20231025120051.png",
-    "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
-    "小游戏开发/Cocos Creator/images/动画系统/动画剪辑.png",
-    "小游戏开发/Cocos Creator/images/动画系统",
-    "小游戏开发/Cocos Creator/images",
-    "动画剪辑.png",
-    "小游戏开发/Cocos Creator/动画系统",
-    "小游戏开发/Cocos Creator/系统事件.md",
-    "面试经历/2023年秋招/2023年秋招投递.md",
-    "小游戏开发/Cocos Creator",
-    "Untitled/Untitled",
-    "Untitled",
-    "小游戏开发",
-    "前端书籍/Web性能权威指南.pdf",
-    "前端书籍/你不知道的JavaScript（上卷）.pdf",
-    "前端书籍/高性能JavaScript.pdf",
-    "面试经历/2023年秋招/美团二面.md",
-    "JavaScript/Array/JavaScript数组常用方法.md",
-    "JavaScript/作用域和闭包/欺骗词法.md",
-    "面试经历/2023年秋招/美团一面.md",
-    "面试经历/2023年秋招/知乎一面.md",
-    "JavaScript/作用域和闭包/词法作用域.md",
-    "JavaScript/JavaScript继承.md",
-    "知乎一面.md",
-    "面试经历/2023年秋招/2023年秋招投递.md",
-    "JavaScript/内存泄漏/内存泄漏.md",
-    "面试经历/2023年秋招/快手二面.md",
-    "JavaScript/Array.md",
-    "JavaScript/Array",
-    "JavaScript/输出题",
-    "面试经历/2023年秋招/快手一面.md",
-    "面试经历/2023年秋招/字节一面.md",
-    "面试经历/2023年秋招/云智二面.md",
-    "浏览器/浏览器缓存.md",
-    "浏览器/浏览器同源策略.md",
-    "浏览器/浏览器渲染原理.md",
-    "Vue/Vue Router/路由matcher的实现.md",
-    "面试经历/2023年秋招投递.md",
-    "Vue/Vue Router/image/Vue Router/createRourerMatcher源码.webp",
-    "Vue/Vue Router/image/Vue Router",
-    "Vue/Vue Router/image",
-    "image/Vue Router/createRourerMatcher源码.webp",
-    "image/Vue Router/createRourerMatcher源码.webp.crdownload",
-    "image/Vue Router",
-    "image/新建文件夹",
-    "Pasted image 20230919000129.png",
-    "image",
-    "Pasted image 20230918233343.png",
-    "面试经历/2023年秋招/云智一面.md",
-    "CSS/CSS基础.md",
-    "面试经历/2023暑期实习/亚信安全.md",
-    "数据结构/Images/完美二叉树.png",
-    "数据结构/Images/完全二叉树.png",
-    "数据结构/Images/未命名绘图.png",
-    "数据结构/Images/树的基本结构.png",
-    "计算机网络/Images/HTTP1.1的特性-思维导图.png",
-    "计算机网络/Images/HTTP1.1的优化方案-思维导图.png"
-    "JavaScript/作用域和闭包/LHS查询和RHS查询.md",
-    "JavaScript/作用域和闭包/词法作用域.md"
+    "小游戏开发/Cocos Creator/2D对象/2D 渲染.md",
+    "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
+    "小游戏开发/Cocos Creator/2D对象",
+    "未命名"
   ]
 }
