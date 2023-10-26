@@ -21,7 +21,7 @@ const { ccclass, property } = _decorator;
 @ccclass('Example')
 export class Example extends Component {
 	start() {
-		const uiTransform = this.node.getComponent(UITransform)
+		const uiTransform = this.getComponent(UITransform)
 		// 方法一
 		uiTransform.setContentSize(200, 200)
 		uiTransform.setAnchorPoint(0, 0.5)

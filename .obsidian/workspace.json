@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/UI 变换组件.md",
+                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/UI 变换组件.md",
+                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/UI 变换组件.md",
+                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/UI 变换组件.md"
+                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md"
               }
             }
           },
@@ -167,8 +167,9 @@
   },
   "active": "a7de555cc0381c76",
   "lastOpenFiles": [
-    "小游戏开发/Cocos Creator/动画系统/动画组件参考.md",
     "小游戏开发/Cocos Creator/2D对象/UI 变换组件.md",
+    "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
+    "小游戏开发/Cocos Creator/动画系统/动画组件参考.md",
     "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
     "小游戏开发/Cocos Creator/2D对象/2D 渲染.md",
     "小游戏开发/Cocos Creator/2D对象",
