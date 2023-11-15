@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "5bf5275b9ab76d92",
+    "id": "1c28af217d2e611c",
     "type": "split",
     "children": [
       {
-        "id": "9ce8d182ec3e6d5f",
+        "id": "6658dd9ed0490020",
         "type": "tabs",
         "children": [
           {
-            "id": "a7de555cc0381c76",
+            "id": "050aa802c4b5a931",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
+                "file": "3D数学基础/向量与向量运算.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4b5719f3a6141d1e",
+    "id": "6dbb7fd429fb3c03",
     "type": "split",
     "children": [
       {
-        "id": "ab0b53d700c690aa",
+        "id": "0c4c92c6feb6e9e3",
         "type": "tabs",
         "children": [
           {
-            "id": "a16a89d64415cf90",
+            "id": "5fd3c8007bf79448",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "61d16e1d57c7c6db",
+            "id": "6c9b7390f9f9b0ec",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "bf0380c1282c6579",
+            "id": "774773c1ca3e70ba",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "205af04e482e2a78",
+    "id": "3a18687fc29bcb60",
     "type": "split",
     "children": [
       {
-        "id": "fd794c4c1fa74a81",
+        "id": "33d71c44a7535ec9",
         "type": "tabs",
         "children": [
           {
-            "id": "b7eadc2c7576278e",
+            "id": "bf2bc01ffe86b039",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
+                "file": "3D数学基础/向量与向量运算.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +97,19 @@
             }
           },
           {
-            "id": "9d77ae20e2a830a8",
+            "id": "78b515ba54dd9899",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
+                "file": "3D数学基础/向量与向量运算.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "52f7b866cf16ede4",
+            "id": "bfe7dc05ae8dc93a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,7 +120,7 @@
             }
           },
           {
-            "id": "624b0f17e8353d6e",
+            "id": "b06eb4f0e07beedd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -130,71 +130,56 @@
             }
           },
           {
-            "id": "507cdc66c6120f7f",
+            "id": "9961e7ce495629d4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md"
+                "file": "3D数学基础/向量与向量运算.md"
               }
             }
-          },
-          {
-            "id": "2b74a26342bd8015",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "a7de555cc0381c76",
+  "active": "050aa802c4b5a931",
   "lastOpenFiles": [
-    "小游戏开发/Cocos Creator/2D对象/UI 变换组件.md",
-    "小游戏开发/Cocos Creator/2D对象/Widget 组件参考.md",
-    "小游戏开发/Cocos Creator/动画系统/动画组件参考.md",
-    "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
+    "3D数学基础/Image/向量与向量运算.png",
+    "3D数学基础/向量与向量运算.md",
+    "计算机图形学/基础变换矩阵.md",
+    "计算机网络/TCPIP网络模型.md",
+    "3D数学基础/Image",
+    "计算机网络/TCP与UDP协议.md",
+    "计算机网络/HTTP状态码.md",
+    "计算机网络/HTTP协议.md",
+    "计算机网络/DNS协议介绍.md",
+    "计算机网络/计算机网络面经.md",
+    "计算机网络/Images/HTTP1.1的特性-思维导图.png",
+    "计算机网络/HTTP篇/HTTP 基本概念.md",
+    "计算机网络/HTTP篇/HTTP2.0 的特性.md",
+    "计算机网络/HTTP篇/HTTP1.1优化方案.md",
+    "计算机网络/HTTP篇/HTTP1.1的特性.md",
+    "计算机网络/Images/HTTP1.1的优化方案-思维导图.png",
+    "3D数学基础",
     "小游戏开发/Cocos Creator/2D对象/2D 渲染.md",
-    "小游戏开发/Cocos Creator/2D对象",
-    "Vue/Vue.js设计与实现/响应系统/响应系统的作用与实现.md",
-    "Vue/Vue.js设计与实现/渲染器的设计.md",
-    "Vue/Vue.js设计与实现/响应系统",
-    "Vue/Vue.js设计与实现",
-    "小游戏开发/Cocos Creator/images/动画系统/动画组件属性.png",
-    "小游戏开发/Cocos Creator/images/动画系统/动画剪辑.png",
-    "小游戏开发/Cocos Creator/动画系统/动画剪辑.md",
-    "Pasted image 20231025120051.png",
-    "小游戏开发/Cocos Creator/images/动画系统",
-    "小游戏开发/Cocos Creator/images",
-    "动画剪辑.png",
-    "小游戏开发/Cocos Creator/动画系统",
-    "小游戏开发/Cocos Creator/系统事件.md",
-    "面试经历/2023年秋招/2023年秋招投递.md",
-    "小游戏开发/Cocos Creator",
-    "Untitled/Untitled",
-    "Untitled",
-    "小游戏开发",
-    "面试经历/2023年秋招/美团二面.md",
-    "面试经历/2023年秋招/美团一面.md",
-    "JavaScript/作用域和闭包/欺骗词法.md",
-    "JavaScript/作用域和闭包/LHS查询和RHS查询.md",
-    "JavaScript/作用域和闭包/词法作用域.md"
+    "计算机图形学",
+    "README.md",
+    "小游戏开发/Cocos Creator/2D对象/Sprite 组件.md",
+    "小游戏开发/Cocos Creator/2D对象"
   ]
 }
